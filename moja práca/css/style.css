@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,400&display=swap');
+body {
+background-image: url(../images/bg.png);
+font-size:14px;
+font-family: 'Roboto', sans-serif;
+}
+div#main {
+background-image: url(../images/bg2.jpg);
+max-width: 1200px;
+margin: auto;}
+h1 {
+font-size: 50px;
+}
+h2 {
+font-size: 40px;
+}
+h1 , h2 {
+color: white;
+text-align: center;
+}
+p {
+margin: 0;
+}
+h3 {
+font-size: 25px;
+}
+div#buble {
+background-color: orange;
+position: fixed;
+top: 0px;
+right: 0px;
+padding: 20px;
+color: white;
+font-weight: 700;
+}
+
+div#buble.hide {
+    display: none;
+}
+
+header {
+    padding-top: 25px;
+    text-align: center;
+}
+
+header ul {
+margin: 0;
+padding: 0;
+background-color:grey ;
+}
+header li {
+padding: 15px;
+display: inline-block;
+color: white;
+}
+div#left {
+float: left;
+width: 20%;
+}
+div#left ul {
+background-color: #03a9f4;
+color: black;
+}
+div#left ul li {
+padding: 10px;
+}
+div#right {float: right;width: 80%;padding: 0 15px 15px;box-sizing: border-box;}
+#right img {
+width: 150px;
+float: left;
+padding-right: 10px;
+border-radius: 100%;
+}
+#left img {
+width: 250px;
+}
+div#content {overflow: hidden;display: flex;}
+
+.Movie {
+    overflow: hidden;background-color: white;margin-bottom: 25px;border-bottom: 3px solid gold;padding: 0px 15px 15px 15px;line-height: 25px;
+    -webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 12px -2px 19px 4px rgba(0,0,0,0); 
+    box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 12px -2px 19px 4px rgba(0,0,0,0);
+    border-radius: 25px;
+}
+a {
+color: white;
+}
+a:hover {
+color: gold;
+}
+table {
+border: 2px solid red;
+}
+th, td {
+border: 1px solid;
+}
+
+
+div#left ul {
+    background-color: #8803f4;
+    color: rgb(219, 7, 7);
+    }
+
+    .Movie a {
+        color: blue;
+        
+    }
+
+    iframe {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    div#right-last {
+        width: 15%;
+    }
