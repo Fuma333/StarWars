@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!-- do google html w3scholl https://www.w3schools.com/html/html_basic.asp skopirujeme example -->
+<html lang="sk">
+<head>
+    <!--https://www.w3schools.com/tags/tag_meta.asp do head sekcie vlozime metadata-->
+    <title>Home page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Star Ward fanpage">
+    <meta name="keywords" content="starwars, kurz,">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- externy odkaz na style.css -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* sem moze ist tiez css, ked bude to ma vacsiu vahu */
+    </style>
+</head>
+<body>
+    <!-- vytvorime si layout podla obrazka web1-vrstvy-elementy -->
+    <!-- cistle otvorime prehliadaci inspetct butonn vytvory selektor id="pes"# pes, header, class="pes".pes {} -->
+<div id="bubble">
+    Ahoj Samo
+    <button onclick="myFunction()">X</button>  <!-- atribut onlick vola fuknciu v script.js -->
+</div>
+<div id="main">
+    <header>
+        <h1 id="nadpis">Nadpis stranky</h1> <!-- google dava najvacsiu prioritu textu vo vnutry -->
+        <ul>
+            <li><a href="index.html">Home</a></li> <!-- href="" tu sa odkazem priamo na subor ked klinkem prepne sa stranka -->
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </header>
+    <div id="content"><!-- ak chceme aby bol obsah v stlpcoch tak #content { display: flex;} -->
+        <div id="left"> <!-- #left { width: 20% } -->
+            <ul style="background: red;"> <!-- style="" inline css ma najvacsiu vahu zo vsetkcyh -->
+                <li><a href="#movie1">Nova nadej</a></li> <!-- do href atributu ak dam #movie1 myslim tym nascroluj na element s id movie1 -->
+                <li><a href="#movie2">Imperium vracia uder</a></li>
+                <li><a href="#movie3">Navrat Jediho</a></li>
+            </ul>
+            <img src="images/tie.png" alt="tie fighter"/> <!-- src / idem do hlbky v strome ../ cuvam v strome alt zobrazy ak nenacita obrazok -->
+        </div>
+        <div id="right"> <!-- #right { width: 80% } -->
+            <h2>Zoznam filmov</h2> <!-- google mensiu prioritu -->
+            <div class="movie" id="movie1"> <!-- preco class preco nie id, class davame ak sa element opakuje / pri cisle riadku je sipka zbalim -->
+                <h3>
+                    Nova nadej
+                </h3>
+                <img src="images/poster1.png" alt="poster1"/> <!-- .movie img { float:left;} obtekanie plati len pre img vo vnutry .movie -->
+                <b>Lorem</b> <i>ipsum</i> <u>dolor</u> sit amet, consectetur<br> <!-- <b></b> tucne <i></i> sikme <u></u> podciarknute-->
+                <p>adipiscing elit, sed do eiusmod tempor</p> <i></i> <!-- <br> <p></p> p{margin:0} -->
+                 incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <table> <!-- google table html,  -->
+                    <tr>
+                      <th>Dlzka</th>
+                      <th>Hodnotenie</th>
+                      <th>Zarobok</th>
+                    </tr>
+                    <tr>
+                      <td>120min</td>
+                      <td>80%</td>
+                      <td>1 000 000$</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="movie" id="movie2">
+                <h3>
+                    Imperium vracia uder
+                </h3>
+                <img src="images/poster2.jpg"/>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <table>
+                    <tr>
+                      <th>Dlzka</th>
+                      <th>Hodnotenie</th>
+                      <th>Zarobok</th>
+                    </tr>
+                    <tr>
+                      <td>120min</td>
+                      <td>80%</td>
+                      <td>1 000 000$</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="movie" id="movie3">
+                <h3>
+                    Navrat Jediho
+                </h3>
+                <img src="images/poster3.jpg"/>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <table>
+                    <tr>
+                      <th>Dlzka</th>
+                      <th>Hodnotenie</th>
+                      <th>Zarobok</th>
+                    </tr>
+                    <tr>
+                      <td>120min</td>
+                      <td>80%</td>
+                      <td>1 000 000$</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div> 
+</div>
+<!-- volam externe javascript -->
+<script src="js/script.js">
+    // tu mozem vlozit tiez javascript
+</script>
+
+</body>
+</html>

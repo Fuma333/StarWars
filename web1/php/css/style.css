@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,300&display=swap');
+/* google fonts vybrali font prepnem na moznost @import vlozim do style.css */
+
+body {
+    background-image: url(https://previews.123rf.com/images/lavaber/lavaber1801/lavaber180100022/93385578-leopard-texture-brown-beige-with-darker-border-vector-illustration.jpg);
+    /* absolutna cesta k obrazku */
+    font-size: 14px;
+    /* velkost fontu plati pre cely web teda pre vsetko vo vnutry body pretoze ostatne elemnty */
+    font-family: 'Roboto', sans-serif;
+}
+div#main {
+    background-image: url(../images/bg2.jpg); /* relativna cesta k obrazku ../ cuvame spat do root potom ked cuvneme mozme ist hlby do images */
+    max-width: 1200px; 
+    margin: auto; /* ak je max-width nastavene vycentruje na stred okolo rozmeru 1200px */
+}
+    /* typografia elemnty ako h1 h2 h3 p a definovat velkosti fontov a farby najlepsie hned na zaciatku */
+h1 {
+    font-size: 50px; 
+}
+h2 {
+    font-size: 40px;
+} 
+
+h3 {
+    font-size: 25px;
+}
+h1, h2 { /* centrujem na stred text a farba biela, plati pre aj h1 aj vsetky h2 */
+    color: white;
+    text-align: center;
+}
+p {
+    margin: 0;
+}
+a {
+    color: white;
+}
+
+a:hover { /* ak prejdem myskou na <a href=""><a> hoci kde na stranke tak sa zmeni farba textu na zltu */
+    color: gold;
+}
+table { /* oramuje sa len obal tabulky nie jej vnutro */
+    border: 1px solid red; /* prva hodnota je sirka oramovania druha hodnota je typ okrem solid moze byt napriklad aj dashed posledna je farba */
+    /* ak chcem mat ramik len hore border-top: 1px solid red; */
+    /* -top, -left, -right, -bottom, toto sa da uplatnit aj v margin aj padding */
+}
+
+th, td { /* oramuje sa jej vnutro tabulky */
+    border: 1px solid; /* ak nie je nastavena farba tak ta co ma sebe priehlidac defaultne a to je cierna */
+}
+
+div#bubble {
+    background-color: rgb(214, 154, 42); /* rgb(214, 154, 42); red, #FFF */
+    position: fixed; /* element zostane zafixovany na jednom mieste aj ked scrolujem */
+    top: 0; /* element zostane zafixovany na jednom uplne hore */
+    right: 0; /* element zostane zafixovany na jednom uplne napravo */
+    padding: 20px; /* element z vnutra osadi o 20px s kazdej strany */
+    color: white; /* biela farba fontu */
+    font-weight: 700; /* hrubka fontu to iste ako by som to uzavrel do tagov <b></b> */
+}
+div#bubble.hide {
+    display: none; /* ak javascrpit da elemntu s id bubble ak prida class hide zmizne */
+}
+
+header {
+    padding-top: 25px;
+    text-align: center;
+}
+
+header ul { /* plati len pre ul kotry je vo vnutry header tagu */
+    margin: 0; /* prehliadac ma defaultne nastaveny margin aj padding pre ul takto ho vypnem alebo aj nastavim vlastny */
+    padding: 0;
+    background-color: gray;
+}
+
+header li {
+    padding: 15px;
+    display: inline-block; /* normalne je <li></li> podsebou takto im poviem aby boli vedla seba */
+    color: white;
+}
+
+div#content {
+    overflow: hidden; /* ked ma elemnty v vnutry content nejaky float tak nastavime ich rodicovy owerflow hidden */
+    display: flex; /* teraz vsetko vo vntry content bude vzdy v stlpcoch vedla seba */
+}
+div#left {
+    width: 20%; /* nastavy sirku 20% z 1200px*/
+}
+
+#main div#left ul { /* plati len pre ul kotry ma rodica main ale aj left */
+    background: blue !important; /* !important velmi nepouzivat iba ked naozaj zo zuflastva chcem zmenit farbu ma najvysiu prioritu*/
+    color: white;
+}
+div#left ul li {
+    padding: 10px;
+}
+div#right {
+    width: 80%;
+    padding: 0 15px 0 15px; /* hodnoty idu podla hodinovych ruciciek teda prva horna druha prava atd...*/
+    box-sizing: border-box; /* ak ma element sirku 200px pixelov a pridam padding 10px tak sirka elemntu bude 180px*/
+}
+
+#right img {
+    width: 150px; /* vsetky obrazky right elemnte bud siroke 150px */
+    float: left; /* zabezpeci aby text pri obrazku obtekla obrazok zlava */
+    padding-right: 10px; /* zabezpeci medzeru mezdi obrazkom a textom */
+    border-radius: 100%;
+}
+
+.movie {
+    overflow: hidden; /* ukonci obtekanie textu v ramci dvu .movie */
+    background-color: white;
+    margin-bottom: 25px;
+    border-bottom: 2px solid gold;
+    padding: 0 15px 15px 15px;
+    line-height: 25px; /* medzeri medzi riadkamy */
+    -webkit-box-shadow: 5px 5px 16px -4px #FF0000; /* do google dam box shadow generator */
+    box-shadow: 5px 5px 16px -4px #FF0000;
+    border-radius: 25px;
+}
+.movie a {
+    color: blue;
+}
+iframe {
+    width: 100%; /* iframe ja roztiahne na sirku rodicovskeho divu co je .movie */
+    padding-bottom: 25px;
+}
+
+div#right-last {
+    width: 15%;
+}
